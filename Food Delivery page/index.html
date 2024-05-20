@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery</title>
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="site.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body id="body" class="body">
+    <div class="sidebar">
+        <h1 class="logo">Food<a>Time</a></h1>
+        <ul class="icons-menu">
+            <a href="#"><i class="fa-solid fa-house"></i>Home</a>
+            <a href="#"><i class="fa-solid fa-list-check"></i>Bills</a>
+            <a href="#"><i class="fa-solid fa-wallet"></i>Wallet</a>
+            <a href="#"><i class="fa-solid fa-bell"></i>Notification</a>
+            <a href="#"><i class="fa-solid fa-comments"></i>Contact Us</a>
+            <a href="#"><i class="fa-solid fa-gear"></i>Setting</a>
+        </ul>
+        <ul class="logout">
+            <a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
+        </ul>
+    </div>
+   
+
+
+    <div class="site" id="site">
+       
+        <div class="header">
+          <div class="header-box1">
+            <div class="bars"><i class="fa-solid fa-bars"></i></div>
+            <div class="search">
+                <input class="input" type="text" placeholder="What you want to eat?">
+                <button class="search-btn">Search</button>
+            </div>
+          </div>
+            <div class="circles">
+                <a href="#"><div class="circle1"><i class="fa-solid fa-cart-shopping"></i></div></a>
+                <a href="#"><div class="circle2"><i class="fa-solid fa-user"></i></div></a>
+                <div id="circle3" class="circle3" onclick="myFunction(1)" onclick="ChangeIcon(this)"><i id="btn__icon" class="fa-solid fa-sun btn__icon"></i></div>
+            </div>
+        </div>
+
+        <div class="recommendation-box">
+            <div class="recommendation-arrows-box">
+                <h2>Recommendations</h2>
+            </div>
+                <div class="recommendation-menu">
+                    <a href="#">
+                    <div class="fresh-salad-box">
+                        <img src="images/fresh salad.jpg">
+                        <div class="fresh-salad-name-prize">
+                            <h4>Fresh Salad</h4>
+                            <h5>$42.50</h5>
+                        </div>
+                    </div></a>
+
+                    <a href="#">
+                    <div class="cafe-latte-box">
+                        <img src="images/hot cafe latte.jpg">
+                        <div class="cafe-latte-name-prize">
+                            <h4>Cafe Latte</h4>
+                            <h5>$20.00</h5>
+                        </div>
+                    </div></a>
+
+                    <a href="#">
+                    <div class="premium-steak-box">
+                        <img src="images/premium steak.jpg">
+                        <div class="premium-steak-name-prize">
+                            <h4>Premium Steak</h4>
+                            <h5>$145.20</h5>
+                        </div>
+                    </div></a>
+
+                    <a href="#">
+                    <div class="big-burger-box">
+                        <img src="images/big burger.jpg">
+                        <div class="big-burger-name-prize">
+                            <h4>Big burger</h4>
+                            <h5>$35.00</h5>
+                        </div>
+                    </div></a>
+
+                </div>
+        </div>
+
+        <div class="all-menu-box" id="all-menu-box">
+            <div class="menu-category">
+                <h2 class="menu-category-title">Menu Category</h2>
+                <div class="foods-icons">
+                    <div class="icon-box1">
+                        <div class="icon-box1-icon"><i class="fa-solid fa-utensils"></i></div>
+                        <h5>All Menus</h5>
+                    </div>
+
+                    <div class="icon-box1">
+                        <div class="icon-box1-icon"><i class="fa-solid fa-burger"></i></div>
+                        <h5>Burger</h5>
+                    </div>
+
+                    <div class="icon-box1">
+                        <div class="icon-box1-icon"><i class="fa-solid fa-pizza-slice"></i></div>
+                        <h5>Pizza</h5>
+                    </div>
+
+                    <div class="icon-box1">
+                        <div class="icon-box1-icon"><i class="fa-solid fa-wine-glass-empty"></i></div>
+                        <h5>Wine</h5>
+                    </div>
+
+                    
+                    <div class="icon-box1">
+                        <div class="icon-box1-icon"><i class="fa-solid fa-ice-cream"></i></div>
+                        <h5>Ice Cream</h5>
+                    </div>
+
+                    <div class="icon-box1">
+                        <div class="icon-box1-icon"><i class="fa-solid fa-coffee"></i></div>
+                        <h5>Coffee</h5>
+                    </div>
+
+                    <div class="icon-box1">
+                        <div class="icon-box1-icon"><i class="fa-solid fa-fish"></i></div>
+                        <h5>Seafood</h5>
+                    </div>
+
+                    <div class="icon-box1">
+                        <div class="icon-box1-icon"><i class="fa-solid fa-apple-whole"></i></div>
+                        <h5>Healthy</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="order-all-box">
+                <h2>Choose Order</h2>
+                <div class="orders-boxes-box">
+                    <div class="order-box1">
+                        <img src="images/shroom soup.jpg">
+                        <div class="order-box1-title-plus-fav">
+                            <h3>Shrimp Soup</h3>
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                        <p id="lighted-text">Lorem ipsum dolor sit amet consectetur adipisicing elit ipsum dolor sit.</p>
+                        <h2>$152.00</h2>
+                    </div>
+
+                    <div class="order-box1">
+                        <img src="images/pizza.jpg">
+                        <div class="order-box1-title-plus-fav">
+                            <h3>Pizza</h3>
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                        <p id="lighted-text">Lorem ipsum dolor sit amet consectetur adipisicing elit ipsum dolor sit.</p>
+                        <h2>$68.75</h2>
+                    </div>
+
+                    <div class="order-box1">
+                        <img src="images/wine.jpg">
+                        <div class="order-box1-title-plus-fav">
+                            <h3>Wine</h3>
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                        <p id="lighted-text">Lorem ipsum dolor sit amet consectetur adipisicing elit ipsum dolor sit.</p>
+                        <h2>$15.90</h2>
+                    </div>
+
+                    <div class="order-box1">
+                        <img src="images/big beef burger.jpg">
+                        <div class="order-box1-title-plus-fav">
+                            <h3>Big Beef Burger</h3>
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                        <p id="lighted-text">Lorem ipsum dolor sit amet consectetur adipisicing elit ipsum dolor sit.</p>
+                        <h2>$35.00</h2>
+                    </div>
+
+                    <div class="order-box1">
+                        <img src="images/hot cafe latte.jpg">
+                        <div class="order-box1-title-plus-fav">
+                            <h3>Hot Cafe Latte</h3>
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                        <p id="lighted-text">Lorem ipsum dolor sit amet consectetur adipisicing elit ipsum dolor sit.</p>
+                        <h2>$20.00</h2>
+                    </div>
+
+                    <div class="order-box1">
+                        <img src="images/fresh salad2.jpg">
+                        <div class="order-box1-title-plus-fav">
+                            <h3>Fresh Salad</h3>
+                            <i class="fa-regular fa-bookmark"></i>
+                        </div>
+                        <p id="lighted-text">Lorem ipsum dolor sit amet consectetur adipisicing elit ipsum dolor sit.</p>
+                        <h2>$42.50</h2>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+
+
+
+
+
+
+
+</body>
+<script src="app.js"></script>
+</html>

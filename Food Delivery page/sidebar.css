@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.sidebar{
+    height:100vh;
+    width:23em;
+    background-color: #0F6153;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}
+.icons-menu a{
+    display:flex;
+    gap:1.3em;
+}
+.sidebar a, i{
+    text-decoration: none;
+    color:white;
+    font-weight:lighter;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.icons-menu{
+    font-size:1.3em;    
+    display: flex;
+    flex-direction: column;
+    gap:2em;
+}
+.logo{
+    margin-top:1em;
+    padding:0.5em;
+    font-size:2.3em;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+}
+.logout{
+    margin-bottom: 2em;
+    font-size:1.3em;
+    margin-right:3.5em;
+}
+.icon-menu a{
+    transition:0.3s ease-in-out;
+}
+.icons-menu a:hover{
+    color:#FFC10A;
+    transition:0.1s ease-in-out;
+}
+.icons-menu i:hover{
+    color:#FFC10A;
+    transition:0.1s ease-in-out;
+}
+.logout  a:hover{
+    color:#FFC10A;
+    transition:0.1s ease-in-out;
+}
+.logout i:hover{
+    color:#FFC10A;
+    transition:0.1s ease-in-out;
+}
+.logo a{
+    color:#FFC10A; 
+    font-weight: bold;
+}

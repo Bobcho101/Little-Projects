@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.site{
+    background-color:"#D9F2EE";
+    height:150vh;
+    width:96%;
+    padding:2em;
+    gap:2em;
+    display: flex;
+    flex-direction: column;
+    padding-right: 0;
+}
+
+/*header*/
+
+.header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.fa-bars{
+    color:#FFC10A;
+}
+.header-box1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width:100%;
+    gap:0.4em;
+}
+.circles{
+    display:flex;
+    flex-direction: row;
+    gap:0.3em;
+    height:5em;
+    align-items: center;
+    padding-right:3em;
+}
+.circles i{
+    color: #0F6153;
+}
+.circle1, .circle2, .circle3{
+    width:3em;
+    height:3em;
+    background-color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.circles div:hover{
+    background-color: #FFC10A;
+}
+.fa-bars{
+    display:none;
+}
+.search{
+    display:flex; 
+    flex-direction: row;
+    background-color: white;
+    width:60%;
+    border-radius: 2em;
+    border: none;
+}
+.search-btn{
+    background-color: #FFC10A;
+    border-radius: 2em;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-style: none;
+    width:12em;
+    height:3.5em;
+    color:white;
+    cursor:pointer;
+}
+.search-btn:hover{
+    background-color: #0F6153;
+   
+}
+.input{
+    width:80%;
+    border-radius: 2em;
+    border:none;
+    padding-left:2em;
+    background-color: white;
+    text-decoration: none;
+    outline: none;
+}
+.search:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.bars{
+    background-color: white;
+    width:3em;
+    height:3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    display:none;
+}
+
+/*Recommendation box*/
+
+.recommendation-box{
+    font-family: Arial, Helvetica, sans-serif;
+    padding:1em;
+    border-radius: 0.5em;
+    width:96%;
+    height:8em;
+    background-color: #FFC10A;
+    display:flex;
+    flex-direction: column;
+    gap:0.5em;
+
+}
+
+.recommendation-arrows-box{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+}
+.recommendation-arrows-box h2{
+    color:white;
+}
+.recommendation-menu{
+    display: grid;
+    grid-template-columns: repeat(4, 275px);
+    justify-content: space-around;
+    gap:1.5em;
+    grid-auto-flow:row;
+    text-wrap: nowrap;
+}
+.recommendation-menu a{
+    text-decoration: none;
+}
+
+.fresh-salad-box{
+    background-color:white;
+    display: flex;
+    flex-direction: row;
+    padding: 0.6em; 
+    gap:1em;
+    border-radius: 0.3em;
+    align-items: center;
+}
+.fresh-salad-box img{
+    width:2.5em;
+    height:2.5em;
+    border-radius:0.3em;
+}
+.fresh-salad-name-prize h4{ 
+    color:#0F6153;
+}
+.fresh-salad-name-prize h5{
+    font-weight: lighter;
+}
+.cafe-latte-box{
+    background-color:white;
+    display: flex;
+    flex-direction: row;
+    padding: 0.6em; 
+    gap:1em;
+    border-radius: 0.3em;
+    align-items: center;
+}
+.cafe-latte-box img{
+    width:2.5em;
+    height:2.5em;
+    border-radius:0.3em;
+}
+.cafe-latte-name-prize h4{ 
+    color:#0F6153;
+}
+.cafe-latte-name-prize h5{
+    font-weight: lighter;
+}
+.premium-steak-box{
+    background-color:white;
+    display: flex;
+    flex-direction: row;
+    padding: 0.6em; 
+    gap:1em;
+    border-radius: 0.3em;
+    align-items: center;
+}
+.premium-steak-box img{
+    width:2.5em;
+    height:2.5em;
+    border-radius:0.3em;
+}
+.premium-steak-name-prize h4{ 
+    color:#0F6153;
+}
+.premium-steak-name-prize h5{
+    font-weight: lighter;
+}
+.big-burger-box{
+    background-color:white;
+    display: flex;
+    flex-direction: row;
+    padding: 0.6em; 
+    gap:1em;
+    border-radius: 0.3em;
+    align-items: center;
+}
+.big-burger-box img{
+    width:2.5em;
+    height:2.5em;
+    border-radius:0.3em;
+}
+.big-burger-name-prize h4{ 
+    color:#0F6153;
+}
+.big-burger-name-prize h5{
+    font-weight: lighter;
+}
+
+/*all menu box*/
+
+
+.all-menu-box{
+    width:100%;
+    height:70em;
+    background-color:#F4F4F4;
+    border-radius: 0.5em;
+    padding-top:2.5em;
+    padding-left: 1em;
+    background-color: #D9F2EE;
+}
+.menu-category{
+    display:flex;
+    flex-direction: row;
+    gap:1.5em;
+    align-items: center;
+    border-bottom: 2px solid #0F6153;
+    padding-bottom: 1.5em;
+    margin-right:1em;
+}
+.menu-category h2{
+    text-wrap: wrap;
+    width:4em;
+    line-height: 1.4em;
+}
+.foods-icons{
+    display:grid;
+    grid-template-columns: repeat(8,130px);
+}
+.icon-box1{
+    background-color: white;
+    border-radius: 1em;
+    width:5em;
+    height:7em;
+    display: flex;
+    justify-content:start;
+    padding-top:0.3em;
+    align-items: center;
+    flex-direction: column;
+    gap:1em;
+}
+.icon-box1:hover{
+    cursor: pointer;
+    background-color: #FFC10A;
+    transition: 0.2s;
+}
+.icon-box1-icon{
+    background-color:#D9F2EE;
+    width:4em;
+    height:4em;
+    border-radius: 0.5em;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-box1-icon i{
+    color: #0F6153;
+    font-size:1.5em;
+}
+
+
+
+.order-all-box{
+    display:grid;
+    grid-template-rows:50px 800px;
+    gap:1.5em;
+}
+.order-all-box h2{
+    padding-top:1em;
+    font-weight:bold;
+}
+
+
+
+
+.orders-boxes-box{
+    display:grid;
+    grid-template-columns: repeat(3, 30%);
+    gap:3%;
+}
+.order-box1{
+    border-radius: 1em;
+    background-color: white;
+}
+.order-box1 img{
+    width:100%;
+    height:14.5em;
+    border-radius: 1em;
+    cursor: pointer;
+    display:block;
+    transition: 0.4s ease-in-out;
+}
+.order-box1 img:hover{
+    box-shadow: 0 0 1em 0.5em rgba(0, 0, 0, 0.2);
+    transition: 0.4s ease-in-out;
+}
+.order-box1-title-plus-fav{
+    padding:0.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+.order-box1-title-plus-fav i{
+    color:black;
+}
+.order-box1-title-plus-fav i:hover{
+    cursor: pointer;
+}
+.order-box1-title-plus-fav h3{
+    font-weight:bold;
+    letter-spacing: 1px;
+}
+#lighted-text{
+    padding-left:0.5em;
+    padding-right:1.4em;
+    color:gray;
+}
+.order-box1 h2{
+    padding-left:0.5em;
+    font-weight: lighter;
+    color: #0F6153;
+}
+
+
+.dark-mode{
+    background-color: black;
+}
+.white-mode{
+    background-color: white;
+}

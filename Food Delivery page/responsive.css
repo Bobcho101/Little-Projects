@@ -1,0 +1,231 @@
+@media  screen and (max-width:665px){
+    .sidebar{
+        display:none;
+        position: sticky;
+        top:0;
+        left:0;
+    }
+    .bars{
+        display:flex;
+        border-radius: 50%;
+        width:3em;
+        height:2.9em;
+    }
+    .fa-bars{
+        display: block;
+    }
+    .sidebar.active{
+        display:flex;
+        position: sticky;
+        top:0;
+        left:0;
+    }
+    .search{
+        margin-left:0;
+        width:20em;
+    }
+    .header{
+        gap:1em;
+    }
+    body{
+        width:100vw;
+        background-size: cover;
+    }
+    .search{
+        width:60%;
+    }
+    .site{
+        padding:0.5em;
+    }
+}
+@media screen and (max-width:770px) {
+    .search{
+        width:75%
+    }
+}
+@media screen and (max-width:665px){
+    .logo{
+        margin-right:1em;
+    }
+    .site{
+        overflow: hidden;
+    }
+}
+@media screen and (max-width:1450px){
+    .recommendation-menu{
+        grid-template-columns: repeat(4,225px);
+    }
+}
+@media screen and (max-width:1070px){
+    .recommendation-menu{
+        grid-template-columns: repeat(4,185px);
+    }
+}
+@media screen and (max-width:915px){
+    .recommendation-menu{
+        grid-template-columns: 160px 160px 185px 160px;
+    }
+}
+@media screen and (max-width:835px){
+    .recommendation-menu{
+        grid-template-columns: repeat(2, 185px);
+    }
+    .recommendation-box{
+        height:14em;
+    }
+    .recommendation-arrows-box {
+        justify-content: center;
+    }
+    .search{
+        width:85%;
+    }
+}
+@media screen and (max-width:470px){
+    .recommendation-menu{
+        grid-template-columns: repeat(1,185px);
+    }
+    .recommendation-box{
+        height:24em;
+    }
+}
+@media screen and (max-width:485px){
+    .header{
+        flex-direction: column;
+        gap:0;
+    }
+}
+
+
+@media screen and (max-width:320px){
+    .search-btn{
+        width:9em;
+    }
+}
+@media screen and (max-width:310px){
+   
+    .search{
+        width:100%;
+    }
+    .input{
+        padding-left:1em;
+    }
+    .bars{
+        height:2.5em;
+    }
+}
+@media screen and (max-width:290px){
+    .input{
+        padding-left:1em;
+    }
+}
+
+@media  screen and (max-width:1200px) {
+    .foods-icons{
+        grid-template-columns: repeat(4,130px);
+        grid-gap:1em;
+    }
+}
+@media  screen and (max-width:735px) {
+    .foods-icons{
+        grid-template-columns: repeat(2,130px);
+    }
+    .menu-category{
+        flex-direction: column;
+        align-items: center;
+        padding-left:2em;
+    }
+    .menu-category h2{
+        text-wrap:nowrap;
+        width:9.5em;
+        padding-top:0;
+    }
+    .circles{
+        padding-right:0.4em;    
+    }
+}
+
+@media screen and (max-width:1200px){
+    .site{
+        height:102em;
+    }
+    .all-menu-box{
+        height:102em;
+    }
+}
+@media screen and (max-width:737px){
+    .order-boxes-box{
+        grid-template-columns: repeat(2, 50%);
+    }
+    .site{
+        height:130em;
+    }
+    .all-menu-box{
+        height:130em;
+    }
+}
+@media screen and (max-width:836px){
+    .orders-boxes-box{
+        grid-template-columns: repeat(2, 47%);
+    }
+    .site{
+        height:130em;
+    }
+    .all-menu-box{
+        height:130em;
+    } 
+
+}
+@media screen and (max-width:736px){
+    .orders-boxes-box{
+        grid-template-columns: repeat(1, 90%);
+    }
+    .site{
+        height:215em;
+    }
+    .all-menu-box{
+        height:215em;
+    } 
+}
+@media screen and (max-width:300px){
+    .site{
+        width:103vw;
+    }
+}
+@media screen and (max-width:295px){
+    .site{
+        width:104vw;
+    }
+}
+@media screen and (max-width:285px){
+    .site{
+        width:105vw;
+    }
+}
+@media screen and (max-width:737px){
+    .search{
+        width:100%;
+    }
+    .input{
+        width:100%;
+    }
+    .header{
+        gap:0.5em;
+    }
+}
+@media screen and (max-width:665px){
+    .foods-icons{
+        grid-template-columns: repeat(4, 130px);
+    }
+}
+@media screen and (max-width:600px){
+    .foods-icons{
+        grid-template-columns: repeat(3, 130px);
+    }
+}
+@media screen and (max-width:425px){
+    .foods-icons{
+        grid-template-columns: repeat(2, 130px);
+    }
+}
+
+
