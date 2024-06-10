@@ -1,0 +1,457 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css);
+
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Work', sans-serif;
+}
+body{
+    background-color: var(--bg-color);
+    margin:0 15%;
+    display:flex;
+    flex-direction: column;
+}
+:root{
+    --h1-font:5rem;
+    --h2-font:2.9rem;
+    --p-font:1.1em;
+    --bg-color:#121b25;
+    --text-color:#ffffff;
+    --main-color:#1aa090;
+    --other-color:#d6d6d6;
+}
+
+/*header and sidebar structure*/
+
+.header-and-sidebar{
+    display:flex;
+    flex-direction: row;
+}
+
+/*sidebar*/
+.dark-mode{
+    background-color: var(--bg-color);
+}
+.sidebar{
+    position: fixed;
+    right:0;
+    background-color: var(--main-color);
+    height:100%;
+    width:15em;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display:none;
+
+}
+.sidebar.active{
+    display:flex;
+    z-index: 1;
+    transition: 0.3s;
+}
+.bars.is-active{
+    z-index: 2;
+}
+.sidebar-content{
+    display:flex;
+    flex-direction: column;
+    gap:3em;
+    align-items: center;
+}
+.sidebar-nav-links{
+    list-style: none;
+    display:flex;
+    flex-direction: column;
+    gap:2em;
+}
+.sidebar-nav-links a{
+    text-decoration: none;
+    color:white;
+    transition: 0.3s;
+}
+.sidebar-nav-links a:hover{
+    color:var(--bg-color);
+    transition: 0.3s;
+}
+.login-btn2{
+    color:var(--text-color);
+    text-decoration: none;
+    transition: 0.3s;
+}
+.login-btn2:hover{
+    color:var(--main-color);
+    transition: 0.3s;
+}
+.signup-btn2{
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    text-decoration: none;
+    padding:0.5em;
+    border-radius: 0.1em;
+}
+
+
+/*header*/
+
+header{
+    margin-top:50px;
+    display: flex;
+    gap: 60px;
+    flex-direction: column;
+    height:100dvh;
+}
+
+.navbar-content{
+    position: sticky;
+    display: flex;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+}
+.logo{
+    height:auto;
+    width:8.2em;
+}
+.nav-links{
+    display:flex;
+    flex-direction: row;
+    gap:2em;
+    list-style: none;
+    align-items: center;
+}
+.nav-links a{
+    text-decoration: none;
+    color:var(--text-color);
+    transition: 0.3s;
+}
+.nav-links a:hover{
+    color:var(--main-color);
+    transition: 0.3s;
+}
+.login-signup-box{
+    display:flex;
+    flex-direction: row;
+    gap:1em;
+    align-items: center;
+}
+.login-btn{
+    color:var(--text-color);
+    text-decoration: none;
+    transition: 0.3s;
+}
+.login-btn:hover{
+    color:var(--main-color);
+    transition: 0.3s;
+}
+.signup-btn{
+    color: var(--text-color);
+    background-color: var(--main-color);
+    text-decoration: none;
+    padding:0.5em;
+    border-radius: 0.1em;
+    transition: 0.3s;
+}
+.signup-btn:hover{
+    color:var(--main-color);
+    background-color: var(--text-color);
+    transition: 0.3s;
+}
+.bars{
+    width:2.5em;
+    height:2.5em;
+    cursor: pointer;
+}
+.hero{
+    display:flex;
+    flex-direction: row;
+    gap:2em;
+}
+.hero-content{
+    display:flex;
+    flex-direction: column;
+    gap:2.5em;
+}
+.hero-title{
+    font-size:8vmin;
+    color:var(--text-color);
+}
+.hero-paragh{
+    font-size:var(--p-font);
+    color:var(--other-color);
+}
+.search{
+    background-color: #fff;
+    border-radius:0.5em;
+    height:2.7em;
+    width:22em;
+    display:flex;
+    flex-direction: row;
+    gap:1em;
+    justify-content: center;
+    align-items:center;
+    padding:0.2em;
+}
+.search-btn{
+    width:7em;
+    height:2.7em;
+    background-color: var(--main-color);
+    color:var(--text-color);
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+.search-btn:hover{
+    color:var(--text-color);
+    background-color: var(--main-color);
+}
+.search-input{
+    height:2.7em;
+    width:17em;
+    border: none;
+    outline: none;
+}
+.hero-img{
+    width:37.5em;
+    height:32.5em;
+}
+
+/*featured in section*/
+
+
+.featured-content{
+   display:flex;
+   flex-direction: column;
+   gap:4em;
+}
+.featured-in-img-box{
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    gap:2em;
+}
+.featured-content h2{
+    color:white;
+    font-size:var(--h2-font);
+    text-wrap: nowrap;
+}
+
+
+/*popular residence section*/
+
+.popular-residence-section{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100dvh;   
+}
+.popular-residence-img-box{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:2em;
+}
+.img-box img{
+    width:20em;
+}
+.popular-residence-content h2{
+    color:var(--text-color);
+    font-size: var(--h2-font);
+}
+.popular-residence-content{
+    display: flex;
+    flex-direction: column;
+    gap:5em;
+    align-items: center;
+}
+.img-box{
+    display:flex;
+    flex-direction: column;
+    gap:1em;
+}
+.img-box img{
+    max-width:23em;
+}
+.img-box p{
+    color:var(--other-color);
+}
+.img-box h3{
+    color:var(--text-color);
+}
+.popular-icons{
+    display:flex;
+    flex-direction:row;
+    gap:1.5em;
+}
+.popular-icons i{
+    color:var(--main-color);
+    letter-spacing: 0.1em;
+}
+.view-all-properties-btn{
+    background-color: var(--main-color);
+    color:var(--text-color);
+    padding:1em;
+    width:12em;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.view-all-properties-btn:hover{
+    background-color: var(--text-color);
+    color:var(--main-color);
+    transition: 0.3s;
+}
+
+
+/*we help peopele to find homes*/
+
+.we-help-people-to-find-homes-section{
+    height:80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.we-help-people-to-find-homes-content{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:2em;
+}
+.we-help-people-to-find-homes-text-content{
+    display:flex;
+    flex-direction: column;
+    gap:3em;
+    max-height:10em;
+}
+#glitched-photo{
+    max-width:37em;
+    max-height:37em;
+}
+.we-help-people-to-find-homes-text-content h2{
+    color:var(--text-color);
+    font-size:var(--h2-font);
+}
+.we-help-people-to-find-homes-text-content p{
+    color:var(--other-color);
+    font-size:var(--p-font);
+}
+.get-in-touch-btn{
+    background-color: var(--main-color);
+    color:var(--text-color);
+    padding:1em;
+    width:10em;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+}
+.get-in-touch-btn:hover{
+    color:var(--main-color);
+    background-color: var(--text-color);
+    transition: 0.3s;
+}
+
+
+/*last section*/
+
+
+.last-section{
+    margin-bottom:18em;
+    background: url(img/ss.jpg);
+    background-size:cover ;
+    height:20em;
+    border-radius: 1em;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.last-section-content{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:50em;
+    gap:1em;
+    padding:0 1em;
+}
+.last-section-content h2{
+    font-size:6vmin;
+    color: var(--text-color);
+}
+.last-section-content p{
+    color:var(--text-color);
+    font-size: var(--p-font);
+    text-wrap:wrap;
+}
+.get-started-btn{
+    background-color: var(--main-color);
+    color:var(--text-color);
+    padding:1em 1.7em;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.get-started-btn:hover{
+    background-color: var(--text-color);
+    color:var(--main-color);
+    transition: 0.3s;
+}
+
+
+/*footer*/
+
+footer{
+    display:flex;
+    flex-direction: row;
+    gap:1em;
+    min-height:14em;
+    margin-bottom:5em;
+}
+.footer-big-box1{
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+    gap:2em;
+    width:20em;
+}
+.footer-big-box1 p{
+    color:var(--other-color);
+}
+.socials-box{
+    display:flex;
+    flex-direction: row;
+    gap:0.5em;
+}
+.socials-box i{
+    color:var(--other-color);
+    font-size:1.3em;
+    text-decoration: none;
+    cursor: pointer;
+}
+.footer-big-box2{
+    display:flex;
+    flex-direction:row;
+    gap:6em;
+}   
+.footer-big-box2 h3{
+    color:var(--text-color);
+    font-size: 1.4em;
+}
+.footer-big-box2 p{
+    color:gray;
+}
+.column{
+    display:flex;
+    flex-direction: column;
+    gap:1em;
+}
+.column a{
+    text-decoration: none;
+    color:gray;
+}
+

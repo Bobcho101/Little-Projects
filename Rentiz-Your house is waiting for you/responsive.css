@@ -1,0 +1,224 @@
+@media screen and (max-width:1230px){
+    .nav-links{
+        display:none;
+    }
+    .login-btn, .signup-btn{
+        display:none;
+    }
+    .bars{
+        display:block;
+        position: fixed;
+    }
+    .bars.is-active{
+        right:15.5em;
+    }
+}
+@media screen and (max-width:1110px){
+    
+}
+@media screen and (max-width:1000px){
+    
+}
+@media screen and (min-width:1230px){
+    .bars{
+        display:none;
+    }
+    .sidebar.active{
+        display:none;
+    }
+}
+@media  screen and (max-width:1356px) {
+    .hero-img{
+        width:33.5em;
+        height:28.5em;
+    }
+}
+@media  screen and (max-width:1256px) {
+    .hero-img{
+        width:29.5em;
+        height:24.5em;
+    }
+}
+@media  screen and (max-width:1156px) {
+    .hero-img{
+        width:25.5em;
+        height:20.5em;
+    }
+}
+@media  screen and (max-width:1056px) {
+    .hero-img{
+        width:21.5em;
+        height:16.5em;
+    }
+}
+@media  screen and (max-width:956px) {
+    .hero{
+        flex-direction: column;
+    }
+}
+@media  screen and (max-width:510px) {
+   .navbar-content{
+        justify-content: space-around;
+   }
+}
+@media  screen and (max-width:425px) {
+    .search{
+        width:18em;
+    }
+    .hero-img{
+        width:18em;
+        height:auto;
+    }
+ }
+@media  screen and (max-width:350px) {
+    .search{
+        width:15em;
+    }
+    .hero-img{
+        width:15em;
+        height:auto;
+    }
+ }
+@media  screen and (max-width:300px) {
+    .search{
+        width:13.5em;
+    }
+    .search-input{
+        width:9em;
+    }
+    .hero-img{
+        width:13.5em;
+        height:auto;
+    }
+    .sidebar{
+        width:13em;
+    }
+    .bars.is-active{
+        right:14em;
+    }
+}
+ 
+ 
+@media screen and (max-width:1175px){
+    .featured-in-img-box{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap:3em;
+    }
+}
+ 
+@media screen and (max-width:700px){
+    .featured-in-img-box{
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+ 
+@media screen and (max-width:510px){
+    .featured-in-img-box{
+        grid-template-columns: 1fr;
+    }
+}
+ 
+@media screen and (max-width:1050px){
+    .popular-residence-img-box{
+        grid-template-columns: 1fr 1fr;
+    }
+    .popular-residence-section{
+        padding-bottom:30em;
+        margin-top:25em;
+    }
+}
+@media screen and (max-width:700px){
+    .popular-residence-img-box{
+        grid-template-columns: 1fr;
+    }
+    .popular-residence-section{
+        margin-top:45em;
+        margin-bottom:10em;
+    }
+
+}
+@media screen and (max-width:1200px){
+    .we-help-people-to-find-homes-content{
+        grid-template-columns: 1fr;
+    }
+    
+}
+@media screen and (max-width:625px){
+    #glitched-photo{
+        max-width:30em;
+        max-height:30em;
+    }
+}
+@media screen and (max-width:512px){
+    #glitched-photo{
+        max-width:23em;
+        max-height:23em;
+    }
+}
+@media screen and (max-width:395px){
+    #glitched-photo{
+        max-width:17em;
+        max-height:17em;
+    }
+}
+@media screen and (max-width:300px){
+    .we-help-people-to-find-homes-section{
+        margin-left:1em;
+    }
+}
+@media screen and (max-width:350px){
+    .img-box img{
+        width:15em;
+    }
+}
+
+@media screen and (max-width:995px){
+    .last-section{
+        margin-top:10em;
+    }
+}
+@media screen and (max-width:415px){
+    .get-started-btn{
+        padding:0.5em 1.1em;
+    }
+}
+
+@media screen and (max-width:1050px){
+    footer{
+        flex-direction: column;
+        gap:2em;
+    }
+}
+@media screen and (max-width:1050px){
+    .footer-big-box2{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:310px){
+    .last-section{
+        height:23em;
+    }
+}
+
+@media screen and (max-width:1300px){
+     .last-section{
+        margin-top:10em;
+     }
+}
+@media screen and (max-width:1000px){
+    .last-section{
+       margin-top:15em;
+    }
+}
+@media screen and (max-width:380px){
+    .footer-big-box1{
+        width:14em;
+    }
+}
+@media screen and (max-width:380px){
+    .featured-content h2{
+       font-size:2.3rem;
+    }
+}
+
