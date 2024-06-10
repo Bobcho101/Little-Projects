@@ -1,0 +1,130 @@
+@media only screen and (max-width:850px){
+    .bars{
+        display: block;
+        position: fixed; 
+        right:40px;
+    }
+    .nav-btn{
+        display: none;
+    }
+    .bars.is-active{
+        display: block;
+        position: fixed;
+        right:275px;
+    }
+}
+@media only screen and (min-width:850px){
+    .sidebar.active{
+        display: none;
+    }
+    .bars{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:783px){
+    .bars.is-active{
+        right:250px;
+    }
+}
+@media only screen and (max-width:750px){
+    .bars.is-active{
+        right:230px;
+    }
+}
+@media only screen and (max-width:670px){
+    .bars.is-active{
+        right:210px;
+    }
+}
+@media only screen and (max-width:620px){
+    .bars.is-active{
+        right:190px;
+    }
+}
+@media only screen and (max-width:550px){
+    .bars.is-active{
+        right:170px;
+    }
+}
+
+@media only screen and (max-width:480px){
+    .bars.is-active{
+        right:150px;
+    }
+}
+@media only screen and (max-width:400px){
+    .bars.is-active{
+        right:120px;
+    }
+}
+
+@media only screen and (max-width:330px){
+    .bars.is-active{
+        top:60px;
+    }
+}
+
+@media only screen and (max-width:1120px){
+    .section1-content{
+        grid-template-columns: 1fr;
+    }
+}
+@media only screen and (max-width:550px){
+    .section1-content-box img{
+        width:350px;
+        height:auto;
+    }
+}
+@media only screen and (max-width:550px){
+    .section1-content-box img{
+        width:275px;
+    }
+}
+
+@media only screen and (max-width:1185px){
+    .section3{
+        grid-template-columns: 1fr;
+        height:150vh;
+    }
+}
+@media only screen and (max-width:850px){
+    .section3{
+        margin-left:2.5em;
+    }
+}
+
+@media only screen and (max-width:815px){
+    .images{
+        grid-template-columns:1fr;
+    }
+    .section3{
+        height:210vh;
+    }
+}
+@media only screen and (max-width:410px){
+    .section3{
+        margin-left:1em;
+    }
+}
+@media only screen and (max-width:381px){
+    .images img{
+        width:300px;
+        height:225px;
+    }
+    .images{
+        gap: 0;
+    }
+}
+
+@media only screen and (max-width:325px){
+    .section3{
+        margin-left: 0.5em;
+    }
+}
+@media only screen and (max-width:312px){
+    .images img{
+        width:250px;
+        height:175px;
+    }
+}
