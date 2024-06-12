@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scizzors</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <div class="result-box">
+        <div class="names">
+            <h1>You</h1>
+            <h1>Enemy</h1>
+        </div>
+        <h1 class="result">0 : 0</h1>
+        <button onclick="resetFunction()" class="reset-btn">Reset</button>
+    </div>
+        <div class="icons">
+            <img class="img-rock icon" src="img/rock.png" onclick="rockFunction()">
+            <img class="img-paper icon" src="img/paper.png" onclick="paperFunction()">
+            <img class="img-scissors icon" src="img/scissors.png" onclick="scissorsFunction()">
+        </div>
+    <input class="display-your-pick" placeholder="" type="text" readonly>
+    <input class="display-computer-pick" placeholder="" type="text" readonly>
+    <input class="display-result" placeholder="" type="text" readonly>
+
+    
+</body>
+<script src="script.js"></script>
+</html>
