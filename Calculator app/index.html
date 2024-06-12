@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <div class="calculator">
+        <section class="screen">
+            <input id="display" readonly>
+        </section>
+
+        <section class="calc-buttons">
+            <button onclick="clearDisplay()" class="ac gray-buttons">AC</button>
+            <button onclick="appendToDisplay('(')" class="plus-minus gray-buttons operator-btn">(</button>
+            <button onclick="appendToDisplay(')')" class="percentage gray-buttons operator-btn">)</button>
+            <button onclick="appendToDisplay('/')" class="devide orange-buttons operator-btn">&divide;</button>
+            <button onclick="appendToDisplay('7')" class="seven dark-gray-buttons">7</button>
+            <button onclick="appendToDisplay('8')" class="eight dark-gray-buttons">8</button>
+            <button onclick="appendToDisplay('9')" class="nine dark-gray-buttons">9</button>
+            <button onclick="appendToDisplay('*')" class="multiplied orange-buttons operator-btn">&times;</button>
+            <button onclick="appendToDisplay('4')" class="four dark-gray-buttons">4</button>
+            <button onclick="appendToDisplay('5')" class="five dark-gray-buttons">5</button>
+            <button onclick="appendToDisplay('6')" class="six dark-gray-buttons">6</button>
+            <button onclick="appendToDisplay('-')" class="minus orange-buttons operator-btn">-</button>
+            <button onclick="appendToDisplay('1')" class="one dark-gray-buttons">1</button>
+            <button onclick="appendToDisplay('2')" class="two dark-gray-buttons">2</button>
+            <button onclick="appendToDisplay('3')"class="three dark-gray-buttons">3</button>
+            <button onclick="appendToDisplay('+')" class="plus orange-buttons operator-btn">+</button>
+            <button onclick="appendToDisplay('0')" class="zero dark-gray-buttons">0</button>
+            <button onclick="appendToDisplay('.')" class="comma dark-gray-buttons">.</button>
+            <button onclick="calculate()" class="equal orange-buttons operator-btn">=</button>
+        </section>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
