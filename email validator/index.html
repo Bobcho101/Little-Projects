@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: gray;
+        }
+        .text-input{
+            font-size: 2rem;
+        }
+        .box{
+            display: flex;
+            align-items: center;
+            gap:0;margin:5em;
+        }
+        .btn{
+            font-size: 2em;
+        }
+        .result{
+            font-size: 2em;
+            color:white;
+            text-align: center;
+            outline: none;
+        }
+        .box2{
+            display: flex;
+            margin-left: 5em; 
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <input class="text-input" type="text">
+        <button class="btn">Check</button>
+    </div>
+    <div class="box2">
+        <h1>Result: </h1>
+        <input class="result" type="text" readonly placeholder="">
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
