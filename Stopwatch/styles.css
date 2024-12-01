@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: gray;
+}
+#stopwatch-box{
+    /* margin-left: 50%;
+    transform: translateX(-10%); */
+    font-size: 3em;
+    margin-top: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:.5em;
+}
+
+#numbers-box{
+    display: flex;
+}
+button{
+    font-size: .7em;
+    padding: .3em;
+    cursor: pointer;
+    border-radius: 0.5em;
+    border: 3px solid black;
+}
+#control-box{
+    display: flex;
+    gap:0.5em;
+}
+#start-btn{
+    background-color: green;
+}
+#stop-btn{
+    background-color: red;
+}
+#pause-btn{
+    background-color: yellow;
+}
