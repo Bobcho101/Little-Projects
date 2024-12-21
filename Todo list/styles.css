@@ -1,0 +1,106 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 2em;
+}
+#container{
+    position: absolute;
+    border: 2px solid darkblue;
+    display: flex;
+    flex-direction: column;
+    background-color:darkslategrey;
+    color: white;
+    align-items: center;
+    /* width: 20em; */
+    width: fit-content;
+    height: fit-content;
+    padding: 4em;
+    padding-top: 1em;
+    left: 50%;
+    transform: translateX(-50%);
+    gap:0.8em;
+}
+#title{
+    /* margin-bottom: 0.5em; */
+}
+#form-create{
+    display: flex;
+    gap: 0;
+    border-radius: 2em;
+    border: 2px solid darkblue;
+}
+#form-create input{
+    border-radius: 2em 0 0 2em;
+    padding: 0.9em;
+    outline: none;
+}
+#form-create button{
+    border-radius: 0 2em 2em 0;
+    padding: 0.9em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#to-do-list li {
+    display: flex;
+    align-items: center;
+    word-wrap: break-word; 
+    word-break: break-word; 
+    white-space: normal; 
+    max-width: 100%; 
+    gap: 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid white;
+}
+/* #to-do-list li input[type="checkbox"]{
+    margin-top: 2px;
+
+
+} */
+#list-box{
+    margin-top: 1em;
+    width: 100%;
+    max-width: 15em; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-start;
+    text-wrap: wrap; 
+    overflow-wrap: break-word; 
+    
+}
+#to-do-list{
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    list-style: none;
+    align-items: start;
+    width: 100%;
+    gap:2em;
+}
+
+.remove-task-btn {
+    font-size: 1.5em; 
+    font-weight: bold;
+    color: white; 
+    border: none; 
+    border-radius: 50%; 
+    width: 20px; 
+    height: 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding-bottom: 5px;
+}
+
+#no-tasks-notif{
+    align-self: center;
+    text-wrap: nowrap;
+    
+}
