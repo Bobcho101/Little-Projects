@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#root{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5em;
+}
+#textarea{
+    padding: 1em;
+}
